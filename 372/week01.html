@@ -209,7 +209,7 @@
 										<LI><A HREF=https://git-scm.com/book/en/v2>Git-Book</A></LI>
 										<LI><A HREF=https://www.digitalocean.com/community/tutorials/how-to-use-the-gitlab-user-interface-to-manage-projects>GitLab Doucument</A></LI>
 										<LI><A HREF=https://docs.google.com/document/d/12hgKw6U8n-VzYmuvWYiiQ-Gqgdwnahd6MbfW8e6-DqM/edit#>Fab Academy 2016 Archive Instructions</A></LI>
-									</P>
+									</p>
 									<header>
 										<h3>Step 1: Download and install Git</h3>
 									</header>
@@ -217,69 +217,69 @@
 										<li>Download Git for Windows : <a href="https://git-scm.com/download/win">Click here to download</a></li>
 										<li>Install Git for Windows.
 										<br><a ><img src="images/week01_gitsetup01.jpg" />	</a>
-										<p> Git setup completed,three icons will add to you destop.</P>
+										<p> When Git setup has been completed,three icons will be added  to you desktop.</p>
 										<a ><img src="images/week01_gitsetup02.jpg" />	</a>
-										<p> Here I use Git CMD console shell, Git Bash is the same function withe Git CMD,the difference is the command </P>
+										<p> Here I use Git CMD console shell, which share the same function with Git Bash. The difference between them is their commands. </P>
 									
 									<header>
-										<h3>Step 2: To Generate SSH key</h3>
+										<h3>Step 2: Generate SSH key</h3>
 									</header>	
-										<li>Sign in on <a href="http://git.fabacademy.org">git.fabacademy.org</a> with our <a href="http://www.fablabs.io">fablabs.io</a> ID.</li>
+										<li>Sign in on <a href="http://git.fabacademy.org">git.fabacademy.org</a> with your <a href="http://www.fablabs.io">fablabs.io</a> ID.</li>
 										<li>Double click the Git CMD icon to launch Git CMD to generate SSH key. An SSH key allows
 										you to establish a secure connection between your computer and GitLab.</li>
-										<p> Type the following command it Git CMD shell. </P>
-										<p> <strong>type ~\ssh\id_rsa.pub </strong></P>
+										<p> Type the following command in Git CMD shell. </p>
+										<p> <strong>type ~\ssh\id_rsa.pub </strong></p>
 										<a ><img src="images/week01_gitsetup03.png" />	</a>
-										<p> If you see a long string starting with ssh-rsa, you can skip the next ssh-keygen step. </P>
+										<p> If you see a long string starting with ssh-rsa, you can skip the next ssh-keygen step. </p>
 										
-										<li>To generate a new SSH key,use the following command in Git CMD shell:</li>
-										<p> <strong>ssh-keygen -t rsa -C "$your_email" </strong></P>
+										<li>To generate a new SSH key, you can use the following command in Git CMD shell:</li>
+										<p> <strong>ssh-keygen -t rsa -C "$your_email" </strong></p>
 										<p> This command will prompt you for a location and filename to store the key pair and for a password. 
 										When prompted for the location and filename, just <strong>press enter</strong> to use the default. 
-										If you use a different name, the key will not be used automatically.</P>
-										<li> Use the command below to show your public key in Git CMD shell:</Li>
-										<p> <strong>type ~\ssh\id_rsa.pub </strong></P>
-										<li> Use the command below to copy the key to the clipboard.</Li>
-										<p> <strong>clip < ~\ssh\id_rsa.pub </strong></P>
+										If you use a different name, the key will not be used automatically.</p>
+										<li> Use the command below to show your public key in Git CMD shell:</li>
+										<p> <strong>type ~\ssh\id_rsa.pub </strong></p>
+										<li> Use the command below to copy the key to the clipboard.</li>
+										<p> <strong>clip ~\ssh\id_rsa.pub </strong></p>
 									
 									<header>
-										<h3>Step 3: Setting up your SSH Keys on Gitlab</h3>
+										<h3>Step 3: Set up your SSH Keys on Gitlab</h3>
 									</header>		
-										<li> Click <a href="http://git.fabacademy.org">git.fabacademy.org</a> to enter GitLab for fabacademy.</Li>
-										<li> Click the <strong>Profile Setting </strong>item which is located on the left side of the windows.</Li>
+										<li> Click <a href="http://git.fabacademy.org">git.fabacademy.org</a> to enter GitLab for fabacademy.</li>
+										<li> Click the <strong>Profile Setting </strong>item which is located on the left side of the windows.</li>
 										<a ><img src="images/week01_gitsetup04.png" />	</a>
-										<li> Click the <strong>SSH Keys </strong>item which is located on the left side of the windows.</Li>
-										<li> In the text-field named <strong>"Key"</strong>,right click you mouse and select <strong>paste</strong>
-										     the SSH Keys was copy to the text-field, wait for a moment,you emial was appeared under the <strong>Title</strong> box.
-										<li> Setting up your SSH Keys on Gitlab sucessfully.</Li>
+										<li> Click the <strong>SSH Keys </strong>item which is located on the left side of the windows.</li>
+										<li> In the text-field named <strong>"Key"</strong>, right click your mouse and select <strong>paste</strong>, then
+										     the SSH Keys can be copied to the text-field. Waiting for a moment, your e-mail address will appear below the <strong>Title</strong> box.
+										<li> Set up your SSH Keys on Gitlab sucessfully.</li>
 										<br>
 									<header>
 										<h3>Step 4: Clone you Website to Gitlab</h3>
 									</header>
-									    <li>To Select and enter the folder to store the repository page.  </li> 
-										<li> Use the command below in Git CMD shell to clone your repository :</Li>
-										<p> <strong>git clone git@git.fabacademy.org:fabacademy&lt year &gt /&lt reponame &gt .git </strong></P>	
+									    <li>Select and enter the folder to store the repository page.  </li> 
+										<li> Use the command below in Git CMD shell to clone your repository :</li>
+										<p> <strong>git clone git@git.fabacademy.org:fabacademy&lt year &gt /&lt reponame &gt .git </strong></p>	
 										<a ><img src="images/week01_gitsetup06.png" />	</a>	
 										
-										<li> You will find a new folder which name is the same as your Fablab group name, the folder
-										     is the clone of the Gitlab repo.</Li>
+										<li> You will find a new folder which name is the same as your Fablab group name and it
+										     is the copied repo.</li>
 											 
-										<li> Use the command below in Git CMD shell to enter the local repository :</Li>	 
-										<p> <strong>cd "your lab group name" </strong></P>	
+										<li> Use the command below in Git CMD shell to enter the local repository :</li>	 
+										<p> <strong>cd "your lab group name" </strong></p>	
 										
-										<li> In the local repo, there is as subdirectory named <strong>students </strong> , inside the 
-										     students folder, you can find a folder named for each student_id. Copy your web files to 
-											 your own student_id folder. You can use windows explorer to copy your web files. </Li>
+										<li> In the local repo, there is a subdirectory named <strong>students </strong>. Inside its 
+										     students folder, you can find folders named by each student's id (student_id). Copy your web files to 
+											 your own student_id folder. You can use windows explorer to copy your web files. </li>
 											 
-										<li> Use the command below in Git CMD shell to push your web files to Gitlab repository :</Li>	 
-										<p> <strong>cd "your lab group name" </strong></P>
-										<p> <strong>git config --global user.email "your email" </strong></P>
-										<p> <strong>git config --global user.name "your name" </strong></P>
-										<p> <strong>git add . </strong></P>
-										<p> <strong>git commit -m "upload my web files" </strong></P>
-										<p> <strong>git push origin master </strong></P>
+										<li> Use the command below in Git CMD shell to push your web files to Gitlab repository :</li>	 
+										<p> <strong>cd "your lab group name" </strong></p>
+										<p> <strong>git config --global user.email "your email" </strong></p>
+										<p> <strong>git config --global user.name "your name" </strong></p>
+										<p> <strong>git add . </strong></p>
+										<p> <strong>git commit -m "upload my web files" </strong></p>
+										<p> <strong>git push origin master </strong></p>
 										<a ><img src="images/week01_gitsetup07.png" />	</a>	
-										<li> <strong>Sucessfully!!!</strong> You can go to <a href="http://archive.fabacademy.org">The Fab Academy</a>  to visit your own repo </Li>	 
+										<li> <strong>You make it!!!</strong> You can go to <a href="http://archive.fabacademy.org">The Fab Academy</a>  to visit your own repo </li>	 
 										
 										
 
